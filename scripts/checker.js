@@ -8,32 +8,40 @@ function alertRegex() {
     return true;
 }
 
-
-
 function regex() {
     console.log("entro");
     var result = true;
     if(!checkEmail($('#e-mail').val())){
         console.log("checking email");
+        window.alert("ValidaciÃ³n incorrecta del e-mail");
         return false;
     }
     console.log("checked email");
     if(!checkLevel($('#lvl').val())){
+        window.alert("Validacion incorrecta del nivel de la pregunta");
         return false;
     }
     if(!checkQuest($('#Qst').val())){
+        window.alert("Validacion incorrecta de la pregunta");
+        return false;
+    }
+    if(checkEmpty($('#ans').val())){
+        window.alert("respuesta correcta vacia");
         return false;
     }
     console.log("checked Qst");
     if(checkEmpty($('#noAns1').val())){
+        window.alert("respuesta incorrecta 1 vacia");
         return false;
     }
     console.log("checked no ans1");
     if(checkEmpty($('#noAns2').val())){
+        window.alert("respuesta incorrecta 2 vacia");
         return false;
     }
     console.log("checked no ans2");
     if(checkEmpty($('#noAns3').val())){
+        window.alert("respuesta incorrecta 3 vacia");
         return false;
     }
     console.log("checked no ans3");
