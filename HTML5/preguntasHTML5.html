@@ -26,8 +26,8 @@
     <style>
         div #blk{
             background-color: rgba(195, 195, 195, 0.62);
-            width:465px;
-            height:585px;
+            width:735px;
+            height:485px;
             border:1px solid rgba(10, 131, 169, 0.93);
             padding:10px;
         }
@@ -37,10 +37,6 @@
             height:545px;
             border:1px solid rgba(10, 131, 169, 0.93);
             padding:10px;
-        }
-
-        #s2 {
-            height: 320px;
         }
     </style>
 
@@ -62,7 +58,11 @@
     <section class="main" id="s1">
         <div align="left"><div id="blk" align="left">
           </br>
+            <table border="1">
+                <tr>
+
             <form id='fpreguntas' name='fpreguntas' action='prueba.php' method="post" enctype="text/plain">
+                <td>
                 Email*: &nbsp;<input type="text" size="50" id="e-mail" name="email" placeholder="p.e. alumno@ikasle.ehu.eus" pattern="([a-zA-Z]{1,})+([0-9]{3})+(@ikasle\.ehu\.)+(eus|es)$" required/></br>
                 Dificultad de la pregunta*: &nbsp;<input type="text" size="50" id="lvl" name="level" placeholder="p.e. 4:" pattern="[1-5]{1}" required></br>
                 Tema*: &nbsp;<input type="text" size="50" id="tm" name="tema" placeholder="p.e. Matematicas" required></br>
@@ -72,16 +72,19 @@
                 Respuesta incorrecta*: &nbsp;<input type="text" size="50" id="noAns2" name="incorrectQst2" placeholder="p.e. Homer Simpson" required></br>
                 Respuesta incorrecta*: &nbsp;<input type="text" size="50" id="noAns3" name="incorrectQst3" placeholder="p.e. Thomas Edison" required></br></br>
                 <input type="submit" id="submiter" name="submiter" value="Enviar" align="center"></br></br>
-                <div align="left">
-                    <input id="file_url" type="file" name="foto"></br>
+                </td>
+                <td>
+                <div align="center">
+                    <input id="file_url" type="file" name="foto" align="center"></br>
+                    <div align="left">
+                        <img id="img_destino" src="../resources/img/default.jpg" alt="Tu imagen" align="center" width="256px">
+                    </div>
                 </div>
+            </td>
             </form>
+                </tr>
+            </table>
         </div></div>
-    </section>
-    <section id="s2">
-        <div align="left">
-            <img id="img_destino" src="#" alt="Tu imagen" height="256px">
-        </div>
     </section>
     <footer class='main' id='f1'>
         <p><a href="http://es.wikipedia.org/wiki/Quiz" target="_blank">Que es un Quiz?</a></p>
@@ -106,4 +109,3 @@
 </script>
 </body>
 </html>
->

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,8 +16,8 @@
 	  <style>
 		  div #blk{
 			  background-color: rgba(195, 195, 195, 0.62);
-			  width:465px;
-			  height:585px;
+			  width:735px;
+			  height:485px;
 			  border:1px solid rgba(10, 131, 169, 0.93);
 			  padding:10px;
 		  }
@@ -28,10 +27,6 @@
 			  height:545px;
 			  border:1px solid rgba(10, 131, 169, 0.93);
 			  padding:10px;
-		  }
-
-		  #s2 {
-			  height: 320px;
 		  }
 	  </style>
   </head>
@@ -52,29 +47,34 @@
     <section class="main" id="s1">
 	<div align="left"><div id="blk" align="left">
 		</br>
+		<table border="1">
+			<tr>
 		<form id='fpreguntas' name='fpreguntas' action='prueba.php' method="post" enctype="text/plain">
-			Email*: &nbsp;<input type="text" size="50" id="e-mail" name="email" placeholder="p.e. alumno@ikasle.ehu.eus" ></br>
-			Dificultad de la pregunta*: &nbsp;<input type="text" size="50" id="lvl" name="level" placeholder="p.e. 4:"></br>
-			Tema*: &nbsp;<input type="text" size="50" id="tm" name="tema" placeholder="p.e. Matematicas"></br>
-			Enunciado de la pregunta*: &nbsp;<input type="text" size="50" id="Qst" name="question" placeholder="p.e. Descubrio las propiedades de los fractales:"></br>
-			Repuesta correcta*: &nbsp;<input type="text" size="50" id="ans" name="correctQst" placeholder="p.e. Nikola Tesla"></br>
-			Respuesta incorrecta*: &nbsp;<input type="text" size="50" id="noAns1" name="incorrectQst1" placeholder="p.e. Benoît Mandelbrot"></br>
-			Respuesta incorrecta*: &nbsp;<input type="text" size="50" id="noAns2" name="incorrectQst2" placeholder="p.e. Homer Simpson"></br>
-			Respuesta incorrecta*: &nbsp;<input type="text" size="50" id="noAns3" name="incorrectQst3" placeholder="p.e. Thomas Edison"></br></br>
+			<td>
+			Email*:</br> &nbsp;<input type="text" size="50" id="e-mail" name="email" placeholder="p.e. alumno@ikasle.ehu.eus" ></br>
+			Dificultad de la pregunta*:</br> &nbsp;<input type="text" size="50" id="lvl" name="level" placeholder="p.e. 4:"></br>
+			Tema*:</br> &nbsp;<input type="text" size="50" id="tm" name="tema" placeholder="p.e. Matematicas"></br>
+			Enunciado de la pregunta*:</br> &nbsp;<input type="text" size="50" id="Qst" name="question" placeholder="p.e. Descubrio las propiedades de los fractales:"></br>
+			Repuesta correcta*:</br> &nbsp;<input type="text" size="50" id="ans" name="correctQst" placeholder="p.e. Nikola Tesla"></br>
+			Respuesta incorrecta*:</br> &nbsp;<input type="text" size="50" id="noAns1" name="incorrectQst1" placeholder="p.e. Benoît Mandelbrot"></br>
+			Respuesta incorrecta*:</br>&nbsp;<input type="text" size="50" id="noAns2" name="incorrectQst2" placeholder="p.e. Homer Simpson"></br>
+			Respuesta incorrecta*:</br> &nbsp;<input type="text" size="50" id="noAns3" name="incorrectQst3" placeholder="p.e. Thomas Edison"></br></br>
 		<input type="submit" id="submiter" name="submiter" value="Enviar" align="center"></br></br>
-			<div align="left">
-				<input id="file_url" type="file" name="foto"></br>
-			</div>
+				</td>
+				<td>
+					<div align="center">
+						<input id="file_url" type="file" name="foto" align="center"></br>
+							<div align="left">
+								<img id="img_destino" src="../resources/img/default.jpg" alt="Tu imagen" align="center" width="256px">
+							</div>
+					</div>
+				</td>
 		</form>
-
+			</tr>
+		</table>
 	</div></div>
     </section>
-	  <section id="s2">
-			  <div align="left">
-				  <img id="img_destino" src="#" alt="Tu imagen" height="256px">
-			  </div>
 
-	  </section>
 	  <footer class='main' id='f1'>
 		<p><a href="http://es.wikipedia.org/wiki/Quiz" target="_blank">Que es un Quiz?</a></p>
 		<a href="https://github.com/swg27//">Link GITHUB</a>

@@ -13,7 +13,7 @@ function regex() {
     var result = true;
     if(!checkEmail($('#e-mail').val())){
         console.log("checking email");
-        window.alert("ValidaciÃ³n incorrecta del e-mail");
+        window.alert("Validacion incorrecta del e-mail");
         return false;
     }
     console.log("checked email");
@@ -21,7 +21,8 @@ function regex() {
         window.alert("Validacion incorrecta del nivel de la pregunta");
         return false;
     }
-    if(checkEmpty($('#tm').val())){
+    if(
+        checkEmpty($('#tm').val())){
         window.alert("El tema está vacio");
         return false;
     }
@@ -77,5 +78,5 @@ function checkQuest(quest) {
 }
 
 function checkEmpty(box) {
-    return box == "";
+    return box === "";
 }
