@@ -21,8 +21,12 @@ function regex() {
         window.alert("Validacion incorrecta del nivel de la pregunta");
         return false;
     }
+    if(checkEmpty($('#tm').val())){
+        window.alert("El tema está vacio");
+        return false;
+    }
     if(!checkQuest($('#Qst').val())){
-        window.alert("Validacion incorrecta de la pregunta");
+        window.alert("La pregunte debe tener minimo 10 caracteres");
         return false;
     }
     if(checkEmpty($('#ans').val())){
