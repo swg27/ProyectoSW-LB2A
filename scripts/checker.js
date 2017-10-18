@@ -1,4 +1,4 @@
-function alrtRegex() {
+function alertRegex() {
     console.log("empiezo");
     if(!regex()){
         console.log("sali");
